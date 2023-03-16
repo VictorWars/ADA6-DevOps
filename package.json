@@ -6,7 +6,7 @@
   "type":"commonjs",
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "npx jest"
+    "test": "npx jest --detectOpenHandles"
   },
   "author": "Victor Enrique",
   "license": "ISC",
