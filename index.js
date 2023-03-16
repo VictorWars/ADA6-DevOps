@@ -188,5 +188,8 @@ app.delete('*', (req, res) => {
     return res.status(405).send('Método no aprobado...');
 });*/
 
+
 const port = process.env.port || 3000;
 app.listen(port, () => console.log('Escuchado el puerto ' + port));
+
+module.exports = app;
