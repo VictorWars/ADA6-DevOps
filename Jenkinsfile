@@ -7,6 +7,11 @@ pipeline {
                 git branch: 'develop', url: 'https://github.com/VictorWars/ADA6-DevOps.git'
             }
         }
+        stage('Instalar dependencias') {
+            steps {
+                sh 'npm test'
+            }
+        }
         stage('Ejecutar los casos de prueba') {
             steps {
                 sh 'npm test'
